@@ -1,0 +1,89 @@
+{
+    "cars": [
+        {
+            "make": "Audi",
+            "model": "A7",
+            "vin": "09AGHY64352JITEG98K",
+            "metadata": {
+                "color": "Black",
+                "notes": "Scratches on the front side of the car"
+            },
+            "perdayrent": {
+                "price": 740,
+                "discount": 15
+            },
+            "metrics": {
+                "yoymaintenancecost": 2190.76,
+                "depreciation": 2256.43,
+                "rentalcount": {
+                    "lastweek": 4,
+                    "yeartodate": 221
+                }
+            }
+        },
+        {
+            "make": "Teslas",
+            "model": "85",
+            "vin": "09AGHY64352JITEG99L",
+            "metadata": {
+                "color": "Blue",
+                "notes": "Scratches on the back side of the car"
+            },
+            "perdayrent": {
+                "price": 150,
+                "discount": 10
+            },
+            "metrics": {
+                "yoymaintenancecost": 3190.76,
+                "depreciation": 2255.43,
+                "rentalcount": {
+                    "lastweek": 3,
+                    "yeartodate": 321
+                }
+            }
+        },
+        
+        {
+            "make": "New Tesla",
+            "model": "95",
+            "vin": "09AGHY64552JITEG99L",
+            "metadata": {
+                "color": "Metalic Blue",
+                "notes": "Tyers need to change"
+            },
+            "perdayrent": {
+                "price": 650,
+                "discount": 15
+            },
+            "metrics": {
+                "yoymaintenancecost": 4260.76,
+                "depreciation": 2278.43,
+                "rentalcount": {
+                    "lastweek": 6,
+                    "yeartodate": 721
+                }
+            }
+        },
+        {
+            "make": "BMW",
+            "model": "X5",
+            "vin": "09AGHY64352JITEG88M",
+            "metadata": {
+                "color": "Red",
+                "notes": "Headlight is not working of the car"
+            },
+            "perdayrent": {
+                "price": 830,
+                "discount": 20
+            },
+            "metrics": {
+                "yoymaintenancecost": 2390.76,
+                "depreciation": 2356.43,
+                "rentalcount": {
+                    "lastweek": 6,
+                    "yeartodate": 421
+                }
+            }
+        }
+    ]
+}
