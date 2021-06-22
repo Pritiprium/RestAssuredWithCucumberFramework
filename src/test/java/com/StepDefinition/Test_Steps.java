@@ -5,7 +5,6 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 import java.io.IOException;
 
 import org.testng.Assert;
-
 import com.API_Test.Schema_Stub;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -40,7 +39,8 @@ public class Test_Steps extends Schema_Stub {
 		String URL = hostName + URI;
 		RestAssured.baseURI = URL;
 		response = RestAssured.given().contentType("application/json").get();
-		CarList carList = mapping_with_Response(response.asString()); //CALLING THIS METHOD AND PASSING RESPONSE AS PARAMETER
+		CarList carList = mapping_with_Response(response.asString()); // CALLING THIS METHOD AND PASSING RESPONSE AS
+																		// PARAMETER
 		System.out.println(response.asString());
 		System.out.println(carList);
 		System.out.println("carList  >>>>>> " + carList.getCars().length);

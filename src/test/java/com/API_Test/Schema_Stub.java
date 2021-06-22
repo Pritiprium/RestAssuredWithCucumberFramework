@@ -31,11 +31,13 @@ public class Schema_Stub extends TestBase {
 			throws JsonParseException, JsonMappingException, IOException {
 
 		ObjectMapper objectMapper = new ObjectMapper();
-		// String filepath = System.getProperty("user.dir") +"\\src\\test\\resources\\__files\\car_Responce.json";
+		// String filepath = System.getProperty("user.dir")
+		// +"\\src\\test\\resources\\__files\\car_Responce.json";
 		// File file = new File(filepath);
 		// CarList carList = objectMapper.readValue(file, CarList.class);
-		//INSTEAD OF GIVING JSON FILE PATH LIKE THIS I GAVE THE RESAASURES RESPONSE 
+		// INSTEAD OF GIVING JSON FILE PATH LIKE ABOVE I GAVE THE RESAASURED RESPONSE
 		carList = objectMapper.readValue(jsonString, CarList.class);
+
 		return carList;
 	}
 
@@ -89,7 +91,7 @@ public class Schema_Stub extends TestBase {
 			Float carRevnue = (yeartodate * getdiscount) - (yOYMaint + depriciation);
 			tmap.put(carRevnue, cars.getMake());
 		}
-		System.out.println("Highest Generating Revenue Car-->" + tmap.lastEntry().getValue());
+		System.out.println("Highest Revenue Generating Car-->" + tmap.lastEntry().getValue());
 	}
 
 }
